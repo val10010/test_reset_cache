@@ -79,7 +79,7 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'src/html/cache.html'),
-            filename: path.resolve(__dirname, 'dist/app/cache.html?[hash]'),
+            filename: path.resolve(__dirname, 'dist/app/cache.html'),
         })
     ]
 };
