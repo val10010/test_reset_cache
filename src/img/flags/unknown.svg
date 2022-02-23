@@ -1,0 +1,27 @@
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_1" fill="#e6f2fe" d="m473.655,88.275l-435.31,0c-21.178,0 -38.345,17.167 -38.345,38.345l0,258.76c0,21.177 17.167,38.345 38.345,38.345l435.31,0c21.177,0 38.345,-17.167 38.345,-38.345l0,-258.76c0,-21.178 -17.167,-38.345 -38.345,-38.345z"/>
+  <g id="svg_3"/>
+  <g id="svg_4"/>
+  <g id="svg_5"/>
+  <g id="svg_6"/>
+  <g id="svg_7"/>
+  <g id="svg_8"/>
+  <g id="svg_9"/>
+  <g id="svg_10"/>
+  <g id="svg_11"/>
+  <g id="svg_12"/>
+  <g id="svg_13"/>
+  <g id="svg_14"/>
+  <g id="svg_15"/>
+  <g id="svg_16"/>
+  <g id="svg_17"/>
+  <text stroke="null" transform="matrix(8.421786661797341,0,0,7.615853647326328,-1404.7865269842473,-1193.6077766642943) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_18" y="199.113242" x="190.715594" stroke-opacity="null" stroke-width="0" fill="#2296f3">?</text>
+ </g>
+</svg>

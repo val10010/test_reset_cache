@@ -1,0 +1,28 @@
+{
+    "sourceMap": true,
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "useBuiltIns": "entry",
+                "corejs": 3
+            }
+        ],
+        "@babel/preset-react"
+    ],
+    "plugins": [
+        "babel-plugin-react-html-attrs",
+        "@babel/plugin-syntax-dynamic-import",
+        "@babel/plugin-proposal-class-properties",
+        "@babel/plugin-proposal-optional-chaining",
+        ["@babel/plugin-transform-async-to-generator", { "legacy": true }],
+        ["@babel/plugin-proposal-decorators", { "legacy": true }]
+    ],
+    "env": {
+        "production": {
+            "plugins": [
+                ["babel-plugin-react-generate-property", { "customProperty": "data-test-attribute" }]
+            ]
+        }
+    }
+}

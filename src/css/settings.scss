@@ -1,0 +1,221 @@
+:global {
+    .settings-history-popup {
+        width: 100%;
+        margin: 3.4rem;
+
+        & .MuiDialogContent-root {
+            overflow-x: hidden;
+        }
+
+        & .table-cell-4,
+        & .table-cell-5 {
+            padding: 1rem;
+            white-space: normal;
+            word-break: break-all;
+            box-sizing: border-box;
+        }
+    }
+
+    .settings-page-header {
+        width: 100%;
+        height: 4.1rem;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        padding: .5rem 1rem;
+        justify-content: flex-end;
+        background-color: #f6fbff;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    .settings-no-permission {
+        width: 100%;
+        padding: 1rem;
+        color: #B36700;
+        box-sizing: border-box;
+        background-color: #FFF0CC;
+    }
+
+    .settings-content,
+    .settings-page-content {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        & .content__col {
+            flex: 1;
+            border-right: 1px solid rgba(0, 0, 0, 0.12);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+            &:nth-child(2) {
+                border-right: none;
+            }
+        }
+
+        & h5 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin: 1.5rem 0 1rem;
+        }
+
+        & h4 {
+            font-size: .9rem;
+            font-weight: 700;
+            margin: 1.5rem 0 1rem;
+        }
+
+        & .MuiFormControlLabel-label {
+            line-height: .857rem;
+            font-weight: bold;
+        }
+
+        & .settings-radio .MuiFormControlLabel-label,
+        & .settings-switch .MuiFormControlLabel-label,
+        & .settings-checkbox .MuiFormControlLabel-label {
+            line-height: 1.15rem;
+        }
+
+        & .select-wc .MuiInput-input,
+        & .settings-select .MuiInput-input,
+        & .select-file-input .MuiInput-input,
+        & .shared-text-field .MuiInput-input,
+        & .settings-radio .MuiTypography-root,
+        & .settings-switch .MuiTypography-root,
+        & .select-library-file .MuiInput-input,
+        & .settings-checkbox .MuiTypography-root {
+            font-size: .9rem;
+            font-weight: normal;
+        }
+
+        & .settings-switch .MuiFormHelperText-root {
+            line-height: 1rem;
+            margin-top: 0;
+        }
+    }
+
+    .settings-page-control {
+        width: 100%;
+        padding: 1.5rem 2rem;
+    }
+
+    body .settings-radio {
+        & .MuiButtonBase-root {
+            padding: .5rem;
+            margin-left: .2rem;
+            margin-right: .5rem;
+        }
+    }
+
+    body .settings-checkbox {
+        & .MuiButtonBase-root {
+            padding: .5rem;
+            margin-left: .2rem;
+            margin-right: .5rem;
+        }
+    }
+
+    body .settings-grid {
+        margin-top: 1rem;
+        padding-bottom: 1.5rem;
+
+        & .settings-grid__title {
+            display: flex;
+            height: 2.5rem;
+            align-items: center;
+            margin-bottom: .5rem;
+
+            & h5 {
+                margin: 0;
+            }
+        }
+
+        & .settings-grid__add {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+
+            & button {
+                padding: .5rem;
+                margin: 0 .5rem;
+            }
+
+            & span {
+                font-size: .9rem;
+                font-weight: 700;
+            }
+        }
+
+        & .settings-grid__head {
+            margin: 0;
+            width: 100%;
+            flex-wrap: nowrap;
+            background: #E9FBFF;
+
+            & .MuiGrid-item {
+                align-self: center;
+                font-size: .8rem;
+                font-weight: 700;
+                color: rgba(0, 0, 0, 0.54);
+            }
+        }
+
+        & .MuiGrid-item.settings-grid__delete {
+            width: 15%;
+            text-align: center;
+        }
+
+        & .settings-grid__no-items {
+            width: 100%;
+            padding: 1.6rem;
+            font-size: .857rem;
+            font-weight: 700;
+            text-align: center;
+            background: #f9fafc;
+            box-sizing: border-box;
+        }
+
+        & .settings-grid__body {
+            margin-top: .857rem;
+        }
+
+        & .settings-grid__row {
+            display: flex;
+            margin-bottom: .857rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            & .MuiGrid-container {
+                flex-wrap: nowrap;
+            }
+
+            & .MuiTextField-root {
+                width: 100%;
+            }
+
+            & .MuiInputBase-input {
+                font-size: .9rem;
+            }
+
+            & .settings-row__delete {
+                width: 15%;
+                text-align: center;
+                padding-left: 0;
+                line-height: 3.14rem;
+
+                & button {
+                    padding: .5rem;
+                    color: #fb4444;
+                }
+
+                & svg {
+                    width: 1.5rem;
+                    height: 1.5rem
+                }
+            }
+        }
+    }
+}
