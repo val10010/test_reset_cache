@@ -1,6 +1,7 @@
 {
   "name": "admin_panel",
   "author": "Maxim Skakun",
+  "homepage": "https://val10010.github.io/test_reset_cache",
   "private": true,
   "version": "1.0.0",
   "license": "MIT",
@@ -11,7 +12,9 @@
     "watch": "webpack --watch",
     "eslint": "eslint \"src/@(js|themes)/**/*.js\"",
     "war": "webpack -p --env.production && cd ./dist && bestzip ../admin.zip * && mv ../admin.zip ../admin.war",
-    "npm:update": "npx npm-check-updates"
+    "npm:update": "npx npm-check-updates",
+    "predeploy": "npm run build:production",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@babel/polyfill": "7.2.5",
@@ -26,6 +29,7 @@
     "date-fns": "2.28.0",
     "dayjs": "1.10.7",
     "deep-extend": "0.6.0",
+    "gh-pages": "^3.2.3",
     "history": "4.7.2",
     "immer": "9.0.12",
     "js-cookie": "3.0.1",
@@ -45,7 +49,6 @@
   },
   "devDependencies": {
     "@babel/core": "7.17.2",
-    "core-js": "3.21.0",
     "@babel/plugin-proposal-class-properties": "7.16.7",
     "@babel/plugin-proposal-decorators": "7.17.2",
     "@babel/plugin-proposal-optional-chaining": "7.16.7",
@@ -59,7 +62,9 @@
     "babel-plugin-react-generate-property": "1.1.2",
     "babel-plugin-react-html-attrs": "3.0.5",
     "bestzip": "2.2.0",
+    "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "5.1.2",
+    "core-js": "3.21.0",
     "css-loader": "3.4.2",
     "element-closest-polyfill": "1.0.4",
     "eslint": "5.16.0",
@@ -68,10 +73,10 @@
     "file-loader": "2.0.0",
     "html-webpack-plugin": "3.2.0",
     "mini-css-extract-plugin": "0.8.0",
-    "sass": "1.32.7",
     "optimize-css-assets-webpack-plugin": "5.0.6",
     "postcss-loader": "3.0.0",
     "promise": "8.1.0",
+    "sass": "1.32.7",
     "sass-loader": "8.0.2",
     "terser-webpack-plugin": "2.3.8",
     "url-polyfill": "1.1.12",

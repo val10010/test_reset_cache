@@ -1,5 +1,4 @@
 *.war
-dist/app
 node_modules/
 npm-debug.log
 webpack.local.config.js
