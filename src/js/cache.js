@@ -9,7 +9,7 @@ import 'css/imports.scss';
 
 const App = () => (
     <ThemeProvider theme={theme}>
-        cache5
+        cache6
     </ThemeProvider>
 );
 
