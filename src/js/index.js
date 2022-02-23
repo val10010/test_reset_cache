@@ -9,7 +9,7 @@ import 'css/imports.scss';
 
 const App = () => (
     <ThemeProvider theme={theme}>
-        without cache9
+        without cache10
     </ThemeProvider>
 );
 
